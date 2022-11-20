@@ -1,0 +1,184 @@
+body {
+    background: ghostwhite;
+    font-family: 'Caveat', cursive, Arial, sans-serif;
+    font-size: 160%;
+    color: #333;
+    /*    line-height: 1.6px;*/ /*Многие сразу указываюи межстрочный отступ, но у меня едет вся разметка*/
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+/*Conteiner*/
+
+.conteiner{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/*Header*/
+
+.header {
+    width: 100%;
+    background: #333333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+.header__logo {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+
+.header__logo__link {
+    display: block;
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+}
+
+/*Nav*/
+
+.nav {
+    font-size: 25px;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333333;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+.nav__link {
+    color: #fff;
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+    padding: 10px 10px;
+    text-decoration: none;
+    transition: background .5s, color .2s; /*первые нули можно сокращать*/
+}
+
+.nav__link:hover {
+    color: #333;
+    background: ghostwhite;
+}
+
+.header__logo__link:hover:after {
+    content: "🐇";
+    display: inline-block;
+    top: 10px;
+    position: absolute;
+    font-size: 20px;
+    margin-left: 7px;
+    opacity: 95%;
+}
+
+/*Index*/
+
+.main {
+    width: 100%;
+}
+
+.main__foto {
+    display: flex;
+    justify-content: center;
+    margin-top: 85px;
+    margin-bottom: 15px;
+}
+
+.main__foto__cat {
+    border-radius: 50%;
+    box-shadow: 0 0 10px #444;
+}
+
+.index__icons_public {
+    display: flex;
+    align-items: center;
+}
+
+.index__icons_public .material-icons {
+    padding-left: 6px;
+}
+
+.index__icons_public p {
+    margin: 0;
+}
+
+/*About*/
+
+.main__about {
+    margin-top: 80px;
+    margin-bottom: 15px;
+}
+
+/*Foto*/
+.main__foto__foto {
+    margin-top: 80px;
+    margin-bottom: 15px;
+}
+
+.main__foto__inner {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.my_foto {
+    margin: 10px;
+}
+
+/*Contacts*/
+
+.button {
+    display: inline-block;
+    float: end;
+    width: 60px;
+    height: 40px;
+    position: relative;
+    top: -0.5px;
+    border-radius: 5px;
+    background: #444444;
+    text-align: center;
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+.button:hover {
+    display: inline-block;
+    float: end;
+    width: 60px;
+    height: 40px;
+    position: relative;
+    top: -0.5px;
+    border-radius: 5px;
+    background: #444444;
+    text-align: center;
+    text-decoration: none;
+    color: #f2f2f2;
+    box-shadow: 0 0 10px #444;
+    transform: scale(110%);
+}
+
+/*Footer*/
+.footer {
+    margin-bottom: 30px;
+}
+
+/*пробовать верстать простые сайты*/
